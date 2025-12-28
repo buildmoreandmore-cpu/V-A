@@ -7,7 +7,8 @@ interface EmploymentProps {
 
 const Employment: React.FC<EmploymentProps> = ({ fullPage, navigate }) => {
   const [formData, setFormData] = useState({
-    name: '',
+    firstName: '',
+    lastName: '',
     phone: '',
     email: '',
     driversLicense: '',
