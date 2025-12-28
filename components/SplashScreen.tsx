@@ -33,7 +33,7 @@ const SplashScreen: React.FC<SplashScreenProps> = ({ onComplete }) => {
       >
         <div className="mb-8">
           <img
-            src="https://i.ibb.co/whSyPsxS/V-A-Logo-1-removebg-preview.png"
+            src="https://i.ibb.co/VYjTfJz/V-A-Logo-1-removebg-preview.png"
             alt="V&A Logo"
             className="h-24 w-auto"
           />

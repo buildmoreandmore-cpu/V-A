@@ -1,9 +1,25 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 interface EventsProps {
   fullPage?: boolean;
   navigate?: (view: any) => void;
 }
+
+const nationalEvents = [
+  { name: 'Lollapalooza', slug: 'lollapalooza' },
+  { name: 'Bonnaroo', slug: 'bonnaroo' },
+  { name: 'EDC', slug: 'edc-las-vegas' },
+  { name: 'Formula 1', slug: 'formula-1-miami' },
+  { name: 'NASCAR', slug: 'nascar-events' },
+  { name: 'Coachella', slug: 'coachella' },
+  { name: 'SXSW', slug: 'sxsw' },
+  { name: 'Ultra', slug: 'ultra-music-festival' },
+  { name: 'Austin City Limits', slug: 'austin-city-limits' },
+  { name: 'Comic-Con', slug: 'comic-con' },
+  { name: 'CES', slug: 'ces-las-vegas' },
+  { name: 'Super Bowl', slug: 'super-bowl' },
+];
 
 const EventsSection: React.FC<EventsProps> = ({ fullPage, navigate }) => {
   const highlights = [
@@ -62,18 +78,15 @@ const EventsSection: React.FC<EventsProps> = ({ fullPage, navigate }) => {
                   <h4 className="text-2xl font-black uppercase tracking-tighter mb-8">National Event Portfolio</h4>
                   <p className="text-slate-400 mb-10 font-medium">V&A Workforce deploys professional crews <strong>nationwide</strong> for the world's largest festivals, motorsports events, and productions. Atlanta-headquartered, nationally deployed.</p>
                   <div className="flex flex-wrap gap-4">
-                    <span className="px-5 py-2 bg-white text-black text-[10px] font-black uppercase tracking-[0.2em]">Lollapalooza</span>
-                    <span className="px-5 py-2 bg-white text-black text-[10px] font-black uppercase tracking-[0.2em]">Bonnaroo</span>
-                    <span className="px-5 py-2 bg-white text-black text-[10px] font-black uppercase tracking-[0.2em]">EDC</span>
-                    <span className="px-5 py-2 bg-white text-black text-[10px] font-black uppercase tracking-[0.2em]">Formula 1</span>
-                    <span className="px-5 py-2 bg-white text-black text-[10px] font-black uppercase tracking-[0.2em]">NASCAR</span>
-                    <span className="px-5 py-2 bg-white text-black text-[10px] font-black uppercase tracking-[0.2em]">Netflix</span>
-                    <span className="px-5 py-2 bg-white text-black text-[10px] font-black uppercase tracking-[0.2em]">Shaky Knees</span>
-                    <span className="px-5 py-2 bg-white text-black text-[10px] font-black uppercase tracking-[0.2em]">Oceans Calling</span>
-                    <span className="px-5 py-2 bg-white text-black text-[10px] font-black uppercase tracking-[0.2em]">Country Calling</span>
-                    <span className="px-5 py-2 bg-white text-black text-[10px] font-black uppercase tracking-[0.2em]">Wisconsin State Fair</span>
-                    <span className="px-5 py-2 bg-white text-black text-[10px] font-black uppercase tracking-[0.2em]">GWCC</span>
-                    <span className="px-5 py-2 bg-white text-black text-[10px] font-black uppercase tracking-[0.2em]">Peachtree Road Race</span>
+                    {nationalEvents.map((event) => (
+                      <Link
+                        key={event.slug}
+                        to={`/events/${event.slug}`}
+                        className="px-5 py-2 bg-white text-black text-[10px] font-black uppercase tracking-[0.2em] hover:bg-slate-200 transition-colors"
+                      >
+                        {event.name}
+                      </Link>
+                    ))}
                   </div>
                 </div>
 
