@@ -8,12 +8,27 @@ import Employment from './components/Employment';
 import Stats from './components/Stats';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import SplashScreen from './components/SplashScreen';
 
 type View = 'home' | 'events' | 'labor' | 'employment' | 'about' | 'contact';
 
 const App: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [currentView, setCurrentView] = useState<View>('home');
+  const [showSplash, setShowSplash] = useState(true);
+
+  // Check if splash was already shown this session
+  useEffect(() => {
+    const splashShown = sessionStorage.getItem('splashShown');
+    if (splashShown) {
+      setShowSplash(false);
+    }
+  }, []);
+
+  const handleSplashComplete = () => {
+    setShowSplash(false);
+    sessionStorage.setItem('splashShown', 'true');
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -61,17 +76,20 @@ const App: React.FC = () => {
 
   return (
     <div className="min-h-screen flex flex-col bg-white">
+      {/* Splash Screen */}
+      {showSplash && <SplashScreen onComplete={handleSplashComplete} />}
+
       <Header isScrolled={isScrolled} currentView={currentView} navigate={navigate} />
-      
+
       <main className="flex-grow">
         {renderView()}
       </main>
 
       <Footer navigate={navigate} />
-      
+
       {/* Quick Apply Sticky CTA */}
       <div className="fixed bottom-8 right-8 z-40">
-        <button 
+        <button
           onClick={() => navigate('employment')}
           className="bg-black text-white font-black px-8 py-5 rounded-sm shadow-[0_20px_50px_rgba(0,0,0,0.3)] flex items-center justify-center hover:bg-slate-800 transition-all transform hover:scale-105 active:scale-95 tracking-[0.2em] uppercase text-xs"
         >
