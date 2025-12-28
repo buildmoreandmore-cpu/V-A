@@ -7,9 +7,9 @@ interface EventsProps {
 
 const EventsSection: React.FC<EventsProps> = ({ fullPage, navigate }) => {
   const highlights = [
-    { title: 'Stadium & Arena Staffing', desc: 'Professional crews for Mercedes-Benz Stadium, State Farm Arena, and Truist Park game days, concerts, and special events.' },
-    { title: 'Festival & Concert Cleanup', desc: 'Zero-waste site restoration for Shaky Knees, Music Midtown, Piedmont Park events, and large-scale Atlanta festivals.' },
-    { title: 'Convention Center Labor', desc: '24/7 setup, turnover, and support crews for Georgia World Congress Center trade shows and corporate events.' }
+    { title: 'National Festival Crews', desc: 'Professional crews deployed nationwide for Lollapalooza, Bonnaroo, EDC, Shaky Knees, and major music festivals coast to coast.' },
+    { title: 'Motorsports & Productions', desc: 'Experienced teams for Formula 1, NASCAR events, and Netflix productions. Track-tested reliability at scale.' },
+    { title: 'Convention & Corporate', desc: '24/7 setup, turnover, and support crews for Georgia World Congress Center and convention centers nationwide.' }
   ];
 
   return (
@@ -29,7 +29,7 @@ const EventsSection: React.FC<EventsProps> = ({ fullPage, navigate }) => {
               Event <br/> <span className="opacity-30 italic font-serif">Staffing.</span>
             </h1>
             <p className="text-xl text-slate-400 font-medium max-w-2xl" itemProp="description">
-              <strong>Atlanta event staffing</strong> for Mercedes-Benz Stadium, State Farm Arena, Georgia World Congress Center, Truist Park, and major festivals. Professional crews for concerts, conventions, sporting events, and corporate gatherings across Metro Atlanta.
+              <strong>Nationwide event staffing</strong> from our Atlanta headquarters. Professional crews for Lollapalooza, Bonnaroo, EDC, Formula 1, NASCAR, and major festivals coast to coast. From Mercedes-Benz Stadium to venues across America.
             </p>
           </header>
         )}
@@ -59,26 +59,33 @@ const EventsSection: React.FC<EventsProps> = ({ fullPage, navigate }) => {
             {fullPage && (
               <>
                 <div className="mt-24 p-12 bg-white/5 border border-white/10">
-                  <h4 className="text-2xl font-black uppercase tracking-tighter mb-8">Past Events & Festival Experience</h4>
-                  <p className="text-slate-400 mb-10 font-medium">V&A Workforce has provided professional crews for some of the nation's <strong>largest music festivals and events</strong>. Our teams have experience at scale.</p>
-                  <div className="flex flex-wrap gap-5">
-                    <span className="px-6 py-2 bg-white text-black text-[10px] font-black uppercase tracking-[0.3em]">Lollapalooza</span>
-                    <span className="px-6 py-2 bg-white text-black text-[10px] font-black uppercase tracking-[0.3em]">Bonnaroo</span>
-                    <span className="px-6 py-2 bg-white text-black text-[10px] font-black uppercase tracking-[0.3em]">EDC</span>
-                    <span className="px-6 py-2 bg-white text-black text-[10px] font-black uppercase tracking-[0.3em]">Peachtree Road Race</span>
+                  <h4 className="text-2xl font-black uppercase tracking-tighter mb-8">National Event Portfolio</h4>
+                  <p className="text-slate-400 mb-10 font-medium">V&A Workforce deploys professional crews <strong>nationwide</strong> for the world's largest festivals, motorsports events, and productions. Atlanta-headquartered, nationally deployed.</p>
+                  <div className="flex flex-wrap gap-4">
+                    <span className="px-5 py-2 bg-white text-black text-[10px] font-black uppercase tracking-[0.2em]">Lollapalooza</span>
+                    <span className="px-5 py-2 bg-white text-black text-[10px] font-black uppercase tracking-[0.2em]">Bonnaroo</span>
+                    <span className="px-5 py-2 bg-white text-black text-[10px] font-black uppercase tracking-[0.2em]">EDC</span>
+                    <span className="px-5 py-2 bg-white text-black text-[10px] font-black uppercase tracking-[0.2em]">Formula 1</span>
+                    <span className="px-5 py-2 bg-white text-black text-[10px] font-black uppercase tracking-[0.2em]">NASCAR</span>
+                    <span className="px-5 py-2 bg-white text-black text-[10px] font-black uppercase tracking-[0.2em]">Netflix</span>
+                    <span className="px-5 py-2 bg-white text-black text-[10px] font-black uppercase tracking-[0.2em]">Shaky Knees</span>
+                    <span className="px-5 py-2 bg-white text-black text-[10px] font-black uppercase tracking-[0.2em]">Oceans Calling</span>
+                    <span className="px-5 py-2 bg-white text-black text-[10px] font-black uppercase tracking-[0.2em]">Country Calling</span>
+                    <span className="px-5 py-2 bg-white text-black text-[10px] font-black uppercase tracking-[0.2em]">Wisconsin State Fair</span>
+                    <span className="px-5 py-2 bg-white text-black text-[10px] font-black uppercase tracking-[0.2em]">GWCC</span>
+                    <span className="px-5 py-2 bg-white text-black text-[10px] font-black uppercase tracking-[0.2em]">Peachtree Road Race</span>
                   </div>
                 </div>
 
                 <div className="mt-12 p-12 bg-white/5 border border-white/10">
-                  <h4 className="text-2xl font-black uppercase tracking-tighter mb-8">Atlanta Venues We Staff</h4>
-                  <p className="text-slate-400 mb-10 font-medium">V&A Workforce provides professional event crews for Atlanta's premier venues. From <strong>Falcons and United games</strong> to <strong>Hawks games</strong> and <strong>Braves games</strong>, our teams deliver reliable stadium operations support.</p>
-                  <div className="flex flex-wrap gap-5">
-                    <span className="px-6 py-2 bg-white/10 text-white border border-white/20 text-[10px] font-black uppercase tracking-[0.3em]">Mercedes-Benz Stadium</span>
-                    <span className="px-6 py-2 bg-white/10 text-white border border-white/20 text-[10px] font-black uppercase tracking-[0.3em]">State Farm Arena</span>
-                    <span className="px-6 py-2 bg-white/10 text-white border border-white/20 text-[10px] font-black uppercase tracking-[0.3em]">GWCC</span>
-                    <span className="px-6 py-2 bg-white/10 text-white border border-white/20 text-[10px] font-black uppercase tracking-[0.3em]">Truist Park</span>
-                    <span className="px-6 py-2 bg-white/10 text-white border border-white/20 text-[10px] font-black uppercase tracking-[0.3em]">Piedmont Park</span>
-                    <span className="px-6 py-2 bg-white/10 text-white border border-white/20 text-[10px] font-black uppercase tracking-[0.3em]">Coca-Cola Roxy</span>
+                  <h4 className="text-2xl font-black uppercase tracking-tighter mb-8">Atlanta Home Base Venues</h4>
+                  <p className="text-slate-400 mb-10 font-medium">Our Atlanta headquarters provides crews for local venues including <strong>Falcons and United games</strong>, <strong>Hawks games</strong>, and <strong>Braves games</strong>.</p>
+                  <div className="flex flex-wrap gap-4">
+                    <span className="px-5 py-2 bg-white/10 text-white border border-white/20 text-[10px] font-black uppercase tracking-[0.2em]">Mercedes-Benz Stadium</span>
+                    <span className="px-5 py-2 bg-white/10 text-white border border-white/20 text-[10px] font-black uppercase tracking-[0.2em]">State Farm Arena</span>
+                    <span className="px-5 py-2 bg-white/10 text-white border border-white/20 text-[10px] font-black uppercase tracking-[0.2em]">Georgia World Congress Center</span>
+                    <span className="px-5 py-2 bg-white/10 text-white border border-white/20 text-[10px] font-black uppercase tracking-[0.2em]">Truist Park</span>
+                    <span className="px-5 py-2 bg-white/10 text-white border border-white/20 text-[10px] font-black uppercase tracking-[0.2em]">Piedmont Park</span>
                   </div>
                 </div>
               </>

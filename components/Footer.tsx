@@ -21,11 +21,11 @@ const Footer: React.FC<FooterProps> = ({ navigate }) => {
                 className="h-16 w-auto object-contain mb-4 invert"
               />
               <span className="text-[10px] font-black tracking-[0.5em] uppercase text-slate-600">
-                Atlanta Labor Staffing Agency
+                Nationwide Event & Labor Staffing
               </span>
             </div>
             <p className="text-sm leading-relaxed font-medium" itemProp="description">
-              Atlanta's premier labor staffing agency. Same-day warehouse workers, event staff, construction cleanup crews, and industrial labor. Serving Mercedes-Benz Stadium, GWCC, and Metro Atlanta since inception.
+              Atlanta-headquartered, nationally deployed. Event crews for Lollapalooza, Bonnaroo, EDC, Formula 1, NASCAR, and Netflix. Plus warehouse, construction, and industrial labor across Metro Atlanta.
             </p>
             <address
               className="text-[11px] font-black tracking-[0.2em] leading-loose text-slate-400 uppercase not-italic"
@@ -60,23 +60,23 @@ const Footer: React.FC<FooterProps> = ({ navigate }) => {
           </div>
 
           <div>
-            <h4 className="text-white font-black uppercase tracking-[0.5em] text-[10px] mb-12">Venues We Serve</h4>
-            <ul className="space-y-6 text-xs font-black tracking-[0.15em]">
-              <li><span className="text-slate-400">Mercedes-Benz Stadium</span></li>
-              <li><span className="text-slate-400">State Farm Arena</span></li>
-              <li><span className="text-slate-400">Georgia World Congress Center</span></li>
-              <li><span className="text-slate-400">Truist Park / The Battery</span></li>
-              <li><span className="text-slate-400">Piedmont Park Events</span></li>
+            <h4 className="text-white font-black uppercase tracking-[0.5em] text-[10px] mb-12">Events & Clients</h4>
+            <ul className="space-y-5 text-xs font-black tracking-[0.15em]">
+              <li><span className="text-slate-400">Lollapalooza</span></li>
+              <li><span className="text-slate-400">Bonnaroo / EDC</span></li>
+              <li><span className="text-slate-400">Formula 1 / NASCAR</span></li>
+              <li><span className="text-slate-400">Netflix Productions</span></li>
+              <li><span className="text-slate-400">Shaky Knees / Oceans Calling</span></li>
             </ul>
           </div>
 
           <div>
             <h4 className="text-white font-black uppercase tracking-[0.5em] text-[10px] mb-12">Service Areas</h4>
             <p className="text-xs mb-6 font-medium leading-relaxed">
-              Serving Metro Atlanta: Downtown, Midtown, Buckhead, Alpharetta, Marietta, Sandy Springs, Decatur, Duluth, Kennesaw, McDonough, Newnan, and the Fulton Industrial District.
+              <strong className="text-white">Nationwide deployment</strong> from our Atlanta HQ. We staff events coast to coast including Chicago, Las Vegas, Tennessee, Maryland, Wisconsin, and beyond.
             </p>
             <p className="text-xs font-medium leading-relaxed">
-              Counties: Fulton, DeKalb, Gwinnett, Cobb, Henry, Clayton
+              Atlanta home base: Fulton, DeKalb, Gwinnett, Cobb, Henry, Clayton counties
             </p>
           </div>
         </div>
@@ -84,7 +84,7 @@ const Footer: React.FC<FooterProps> = ({ navigate }) => {
         {/* SEO Keywords Footer Block */}
         <div className="py-8 border-t border-b border-white/5 mb-12">
           <p className="text-[10px] text-slate-600 leading-relaxed text-center">
-            <strong className="text-slate-500">Atlanta Labor Staffing</strong> | Temp Workers Atlanta | Warehouse Staffing Agency | Event Staffing Atlanta | Same Day Workers | Emergency Staffing Atlanta | Forklift Operators Atlanta | Construction Cleanup Atlanta | Festival Staff | Convention Labor GWCC | Stadium Workers | Industrial Labor Georgia | Fulton Industrial Staffing | Loading Dock Workers | Film Production Crews Atlanta
+            <strong className="text-slate-500">National Event Staffing</strong> | Lollapalooza Staff | Bonnaroo Crews | EDC Event Labor | Formula 1 Staffing | NASCAR Event Crews | Netflix Production Labor | Festival Staffing Nationwide | Atlanta Labor Agency | Warehouse Staffing | Construction Cleanup | Stadium Operations | Convention Center Labor | GWCC Staffing
           </p>
         </div>
 
