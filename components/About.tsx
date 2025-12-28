@@ -7,26 +7,33 @@ interface AboutProps {
 
 const About: React.FC<AboutProps> = ({ fullPage, navigate }) => {
   return (
-    <div className={`${fullPage ? 'pt-40 pb-32' : 'py-32'} bg-white overflow-hidden`}>
+    <section
+      className={`${fullPage ? 'pt-40 pb-32' : 'py-32'} bg-white overflow-hidden`}
+      aria-label="About V&A Workforce - Atlanta Staffing Agency"
+      itemScope
+      itemType="https://schema.org/Organization"
+    >
       <div className="container mx-auto px-6">
         {fullPage && (
-          <div className="mb-24 text-center max-w-4xl mx-auto">
+          <header className="mb-24 text-center max-w-4xl mx-auto">
             <h1 className="text-6xl md:text-8xl font-black text-black tracking-tighter leading-none mb-8">
               Reliability <span className="opacity-30 font-serif font-black italic">&</span> Integrity.
             </h1>
-            <p className="text-xl text-slate-500 font-medium tracking-tight">Atlanta's standard for logistical excellence and workforce integrity.</p>
-          </div>
+            <p className="text-xl text-slate-500 font-medium tracking-tight">Atlanta's standard for logistical excellence and workforce integrity. Serving Fulton County, DeKalb County, Gwinnett County, and the entire Metro Atlanta region.</p>
+          </header>
         )}
 
         <div className="flex flex-col lg:flex-row items-center gap-24">
           <div className="lg:w-1/2 relative">
-            <div className="relative z-10 rounded-sm overflow-hidden shadow-2xl grayscale hover:grayscale-0 transition-all duration-700">
-              <img 
-                src="https://images.unsplash.com/photo-1533282960533-51328aa49826?auto=format&fit=crop&q=80&w=1000" 
-                alt="Atlanta Industrial Landscape" 
+            <figure className="relative z-10 rounded-sm overflow-hidden shadow-2xl grayscale hover:grayscale-0 transition-all duration-700">
+              <img
+                src="https://images.unsplash.com/photo-1533282960533-51328aa49826?auto=format&fit=crop&q=80&w=1000"
+                alt="Atlanta industrial skyline - V&A Workforce serves warehouse, event, and construction staffing throughout Metro Atlanta, Georgia"
                 className="w-full h-auto object-cover min-h-[500px]"
+                loading="lazy"
+                itemProp="image"
               />
-            </div>
+            </figure>
             {/* Logo-Style Badge */}
             <div className="absolute -bottom-10 -right-10 z-20 bg-black p-12 shadow-2xl hidden md:block">
               <div className="text-5xl font-black text-white mb-2 leading-none tracking-tighter font-serif italic">V&A</div>
@@ -37,35 +44,35 @@ const About: React.FC<AboutProps> = ({ fullPage, navigate }) => {
           <div className="lg:w-1/2">
             <h2 className="text-black text-xs font-black tracking-[0.5em] uppercase mb-8 flex items-center">
               <span className="w-12 h-[2px] bg-black mr-6"></span>
-              The V&A Mission
+              Atlanta's Trusted Staffing Partner
             </h2>
-            <h3 className="text-5xl md:text-7xl font-black text-black mb-10 leading-[1] tracking-tighter">
+            <h3 className="text-5xl md:text-7xl font-black text-black mb-10 leading-[1] tracking-tighter" itemProp="name">
               A Force for <br/>
               <span className="italic font-serif opacity-40">Precision.</span>
             </h3>
-            <p className="text-slate-600 text-xl mb-12 leading-relaxed font-medium">
-              Varist & Associates (V&A Workforce) is a strategic labor staffing powerhouse. We specialize in complex logistical deployments where reliability isn't just a requirement—it's the core of the business.
+            <p className="text-slate-600 text-xl mb-12 leading-relaxed font-medium" itemProp="description">
+              <strong itemProp="legalName">Varist & Associates (V&A Workforce)</strong> is Atlanta's strategic labor staffing powerhouse. Based in <span itemProp="addressLocality">Downtown Atlanta</span> on Peachtree Street, we specialize in <strong>same-day workforce deployment</strong> for warehouses, events, construction sites, and industrial facilities across <strong>Metro Atlanta and Georgia</strong>.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
-              <div className="flex items-start space-x-6">
-                <div className="flex-shrink-0 w-16 h-16 bg-slate-50 border border-slate-100 flex items-center justify-center text-black shadow-sm">
+              <article className="flex items-start space-x-6">
+                <div className="flex-shrink-0 w-16 h-16 bg-slate-50 border border-slate-100 flex items-center justify-center text-black shadow-sm" aria-hidden="true">
                    <span className="font-serif italic font-black text-2xl">V</span>
                 </div>
                 <div>
-                  <h4 className="font-black text-black mb-2 uppercase tracking-widest text-xs">Vetted Crews</h4>
-                  <p className="text-slate-500 text-sm font-medium leading-relaxed">Rigorous screening ensures every individual on site meets our high standards of professionalism.</p>
+                  <h4 className="font-black text-black mb-2 uppercase tracking-widest text-xs">Vetted & Background-Checked Crews</h4>
+                  <p className="text-slate-500 text-sm font-medium leading-relaxed">Every worker undergoes thorough <strong>background screening</strong> and safety training. Unlike gig platforms, we provide supervised professional crews you can trust at Mercedes-Benz Stadium, GWCC, or your Fulton Industrial warehouse.</p>
                 </div>
-              </div>
-              <div className="flex items-start space-x-6">
-                <div className="flex-shrink-0 w-16 h-16 bg-slate-50 border border-slate-100 flex items-center justify-center text-black shadow-sm">
+              </article>
+              <article className="flex items-start space-x-6">
+                <div className="flex-shrink-0 w-16 h-16 bg-slate-50 border border-slate-100 flex items-center justify-center text-black shadow-sm" aria-hidden="true">
                   <span className="font-serif italic font-black text-2xl">A</span>
                 </div>
                 <div>
-                  <h4 className="font-black text-black mb-2 uppercase tracking-widest text-xs">Agile Logistics</h4>
-                  <p className="text-slate-500 text-sm font-medium leading-relaxed">Swift deployment capabilities for short-notice industrial and event needs across the Southeast.</p>
+                  <h4 className="font-black text-black mb-2 uppercase tracking-widest text-xs">Same-Day Deployment Atlanta</h4>
+                  <p className="text-slate-500 text-sm font-medium leading-relaxed"><strong>Emergency staffing when you need it.</strong> We deploy vetted workers within hours across Atlanta, Alpharetta, Marietta, Buckhead, Midtown, and the entire Metro Atlanta region. Available 24/7.</p>
                 </div>
-              </div>
+              </article>
             </div>
             
             <button 
@@ -83,23 +90,31 @@ const About: React.FC<AboutProps> = ({ fullPage, navigate }) => {
         {fullPage && (
           <div className="mt-48 pt-24 border-t border-slate-100">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-20">
-              <div>
+              <article>
                 <h4 className="text-2xl font-black text-black mb-8 uppercase tracking-tighter">Corporate Mission</h4>
-                <p className="text-slate-500 leading-relaxed font-medium">To lead the staffing industry through unmatched accountability. We don't just fill roles; we build the infrastructure of success for our partners.</p>
-              </div>
-              <div>
-                <h4 className="text-2xl font-black text-black mb-8 uppercase tracking-tighter">Industrial Vision</h4>
-                <p className="text-slate-500 leading-relaxed font-medium">Setting the standard for zero-waste logistics and sustainable labor practices in high-volume environments across the United States.</p>
-              </div>
-              <div>
-                <h4 className="text-2xl font-black text-black mb-8 uppercase tracking-tighter">Regional Roots</h4>
-                <p className="text-slate-500 leading-relaxed font-medium">Deeply embedded in the Atlanta business ecosystem, we prioritize local talent and professional growth to strengthen our hometown community.</p>
-              </div>
+                <p className="text-slate-500 leading-relaxed font-medium">To lead Atlanta's staffing industry through unmatched accountability. We don't just fill roles at Mercedes-Benz Stadium, GWCC, or your warehouse—we build the infrastructure of success for our partners across Georgia.</p>
+              </article>
+              <article>
+                <h4 className="text-2xl font-black text-black mb-8 uppercase tracking-tighter">Zero-Waste Operations</h4>
+                <p className="text-slate-500 leading-relaxed font-medium">Setting the standard for <strong>sustainable event cleanup</strong> and eco-friendly labor practices. Our festival and stadium crews specialize in zero-waste site restoration for Piedmont Park events, Shaky Knees, and major Atlanta venues.</p>
+              </article>
+              <article>
+                <h4 className="text-2xl font-black text-black mb-8 uppercase tracking-tighter">Atlanta Roots</h4>
+                <p className="text-slate-500 leading-relaxed font-medium">Headquartered on <strong>Peachtree Street in Downtown Atlanta</strong>, we're deeply embedded in the local business ecosystem. From Buckhead to the Fulton Industrial District, we prioritize Georgia talent and community growth.</p>
+              </article>
+            </div>
+
+            {/* Service Areas SEO Block */}
+            <div className="mt-16 p-8 bg-slate-50 rounded-sm">
+              <h4 className="text-lg font-black text-black mb-4 uppercase tracking-tight">Areas We Serve in Georgia</h4>
+              <p className="text-slate-500 text-sm leading-relaxed">
+                V&A Workforce provides labor staffing services throughout Metro Atlanta and Georgia including: <strong>Downtown Atlanta</strong>, <strong>Midtown</strong>, <strong>Buckhead</strong>, <strong>Alpharetta</strong>, <strong>Marietta</strong>, <strong>Sandy Springs</strong>, <strong>Decatur</strong>, <strong>Duluth</strong>, <strong>Kennesaw</strong>, <strong>Lawrenceville</strong>, <strong>McDonough</strong>, <strong>Newnan</strong>, <strong>College Park</strong>, <strong>Union City</strong>, and <strong>East Point</strong>. We serve <strong>Fulton County</strong>, <strong>DeKalb County</strong>, <strong>Gwinnett County</strong>, <strong>Cobb County</strong>, <strong>Henry County</strong>, and <strong>Clayton County</strong>.
+              </p>
             </div>
           </div>
         )}
       </div>
-    </div>
+    </section>
   );
 };
 
