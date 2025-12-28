@@ -199,6 +199,35 @@ const Careers: React.FC<CareersProps> = () => {
                 onChange={(e) => setFormData({ ...formData, about: e.target.value })}
               />
 
+              {/* File Uploads */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label className="block text-slate-400 text-sm mb-2">Upload Driver's License</label>
+                  <label className="flex flex-col items-center justify-center w-full px-4 py-6 bg-black border border-slate-700 border-dashed cursor-pointer hover:border-white transition-colors">
+                    <svg className="w-8 h-8 text-slate-500 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+                    </svg>
+                    <span className="text-slate-500 text-sm">Upload File</span>
+                    <input type="file" className="hidden" accept="image/*,.pdf" />
+                  </label>
+                </div>
+                <div>
+                  <label className="block text-slate-400 text-sm mb-2">Upload Social Security Card</label>
+                  <label className="flex flex-col items-center justify-center w-full px-4 py-6 bg-black border border-slate-700 border-dashed cursor-pointer hover:border-white transition-colors">
+                    <svg className="w-8 h-8 text-slate-500 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+                    </svg>
+                    <span className="text-slate-500 text-sm">Upload File</span>
+                    <input type="file" className="hidden" accept="image/*,.pdf" />
+                  </label>
+                </div>
+              </div>
+
+              {/* Privacy Notice */}
+              <p className="text-slate-500 text-xs text-center leading-relaxed">
+                Your sensitive information, including Social Security Numbers (SSNs) and driver's license details, are treated with the utmost care for security and privacy.
+              </p>
+
               <button
                 type="submit"
                 className="w-full bg-white text-black py-5 font-black uppercase tracking-wider hover:bg-slate-200 transition-colors"
