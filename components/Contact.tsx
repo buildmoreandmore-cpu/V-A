@@ -66,7 +66,7 @@ const Contact: React.FC<ContactProps> = ({ fullPage, title, navigate }) => {
                   <div className="text-slate-500 text-[9px] uppercase tracking-[0.4em] font-black mb-3">Email Us</div>
                   <a href="mailto:Polo@vassoc.com" className="text-sm font-bold opacity-80 mb-1 block hover:opacity-100 transition-opacity" itemProp="email">President: Polo@vassoc.com</a>
                   <a href="mailto:Jasia@vassoc.com" className="text-sm font-bold opacity-80 mb-1 block hover:opacity-100 transition-opacity">Accounts: Jasia@vassoc.com</a>
-                  <a href="mailto:Shaun@vassoc.com" className="text-sm font-bold opacity-80 block hover:opacity-100 transition-opacity">Admin: Shaun@vassoc.com</a>
+                  <a href="mailto:Shaun@vassov.com" className="text-sm font-bold opacity-80 block hover:opacity-100 transition-opacity">Admin: Shaun@vassov.com</a>
                 </div>
               </div>
             </div>
