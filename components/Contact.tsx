@@ -51,7 +51,7 @@ const Contact: React.FC<ContactProps> = ({ fullPage, title, navigate }) => {
                 </div>
                 <div>
                   <div className="text-slate-500 text-[9px] uppercase tracking-[0.4em] font-black mb-3">Downtown Atlanta HQ</div>
-                  <address className="text-xl font-black leading-tight not-italic">
+                  <address className="text-lg font-black leading-snug not-italic whitespace-nowrap">
                     <span itemProp="streetAddress">196 Peachtree St SW, #121</span><br/>
                     <span itemProp="addressLocality">Atlanta</span>, <span itemProp="addressRegion">GA</span> <span itemProp="postalCode">30303</span>
                   </address>

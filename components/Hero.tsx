@@ -16,10 +16,6 @@ const Hero: React.FC<HeroProps> = ({ navigate }) => {
 
       <div className="container mx-auto px-6 relative z-10 pt-20">
         <div className="max-w-4xl">
-          <div className="inline-flex items-center px-5 py-2 bg-white text-black text-[10px] font-black tracking-[0.3em] uppercase rounded-full mb-10 animate-fade-in-up shadow-[0_20px_40px_rgba(255,255,255,0.1)]">
-            <span className="w-2 h-2 bg-black rounded-full mr-3 animate-pulse"></span>
-            <span itemProp="provider">V&A Workforce Solutions</span> — Atlanta, Georgia
-          </div>
           <h1 className="text-6xl md:text-9xl font-black text-white leading-[0.85] mb-10 animate-fade-in-up delay-75 tracking-tighter" itemProp="name">
             <span className="sr-only">Atlanta Labor Staffing Agency - </span>
             Strength <span className="opacity-50 font-serif italic">&</span> <br/>
