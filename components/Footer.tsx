@@ -16,7 +16,7 @@ const Footer: React.FC<FooterProps> = ({ navigate }) => {
           <div className="space-y-10">
             <div className="flex flex-col">
               <img
-                src="https://i.ibb.co/Ng71fhm8/logo.jpg"
+                src="https://i.ibb.co/NcVBDvH/slazzer-preview-z7e0n.png"
                 alt="V&A Workforce - Atlanta Labor Staffing Agency"
                 className="h-16 w-auto object-contain mb-4 invert"
               />

@@ -42,9 +42,9 @@ const Header: React.FC<HeaderProps> = ({ isScrolled, currentView, navigate }) =>
       <nav className="container mx-auto px-6 py-4 flex items-center justify-between relative z-50">
         <button onClick={() => navigate('home')} className="flex items-center space-x-3 text-left group">
           <img
-            src="https://i.ibb.co/Ng71fhm8/logo.jpg"
+            src="https://i.ibb.co/NcVBDvH/slazzer-preview-z7e0n.png"
             alt="V&A Workforce - Atlanta Labor Staffing Agency"
-            className="h-12 w-auto object-contain"
+            className={`h-12 w-auto object-contain ${isScrolled || currentView !== 'home' || isMobileMenuOpen ? '' : 'invert'}`}
           />
           <div className={`flex flex-col transition-all duration-300 ${isMobileMenuOpen ? 'opacity-0 lg:opacity-100' : 'opacity-100'}`}>
             <span className={`text-lg font-black tracking-tighter uppercase leading-none whitespace-nowrap ${isScrolled || currentView !== 'home' || isMobileMenuOpen ? 'text-black' : 'text-white'}`}>
