@@ -28,8 +28,8 @@ const Header: React.FC<HeaderProps> = ({ isScrolled, currentView, navigate }) =>
       <div className={`hidden md:block py-2 border-b border-white/5 ${isScrolled || currentView !== 'home' ? 'bg-black' : 'bg-black/20 backdrop-blur-sm'}`}>
         <div className="container mx-auto px-6 flex justify-between items-center text-[10px] font-bold tracking-widest text-slate-400">
           <div className="flex space-x-6">
-            <span className="flex items-center hover:text-white transition-colors cursor-default"><svg className="w-3 h-3 mr-1 text-slate-500" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg> info@vandahire.com</span>
-            <span className="flex items-center hover:text-white transition-colors cursor-default"><svg className="w-3 h-3 mr-1 text-slate-500" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 005.516 5.516l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg> (404) 447-0926</span>
+            <a href="mailto:Polo@vassoc.com" className="flex items-center hover:text-white transition-colors"><svg className="w-3 h-3 mr-1 text-slate-500" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg> Polo@vassoc.com</a>
+            <a href="tel:+14044470926" className="flex items-center hover:text-white transition-colors"><svg className="w-3 h-3 mr-1 text-slate-500" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 005.516 5.516l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg> (404) 447-0926</a>
           </div>
           <div className="flex space-x-6">
             <button onClick={() => navigate('employment')} className="hover:text-white uppercase transition-colors">Career Opportunities</button>
@@ -40,18 +40,18 @@ const Header: React.FC<HeaderProps> = ({ isScrolled, currentView, navigate }) =>
 
       {/* Main Navigation */}
       <nav className="container mx-auto px-6 py-4 flex items-center justify-between relative z-50">
-        <button onClick={() => navigate('home')} className="flex items-center space-x-4 text-left group">
-          <div className="bg-black p-2.5 rounded shadow-2xl transform transition-all group-hover:scale-110">
-             <div className="flex flex-col items-center justify-center">
-                <span className="text-white font-serif text-xl font-black leading-none italic">V&A</span>
-             </div>
-          </div>
+        <button onClick={() => navigate('home')} className="flex items-center space-x-3 text-left group">
+          <img
+            src="https://i.ibb.co/Ng71fhm8/logo.jpg"
+            alt="V&A Workforce - Atlanta Labor Staffing Agency"
+            className="h-12 w-auto object-contain"
+          />
           <div className={`flex flex-col transition-all duration-300 ${isMobileMenuOpen ? 'opacity-0 lg:opacity-100' : 'opacity-100'}`}>
-            <span className={`text-xl font-black tracking-tighter uppercase leading-none whitespace-nowrap ${isScrolled || currentView !== 'home' || isMobileMenuOpen ? 'text-black' : 'text-white'}`}>
-              Varist <span className="opacity-50">&</span> Associates
+            <span className={`text-lg font-black tracking-tighter uppercase leading-none whitespace-nowrap ${isScrolled || currentView !== 'home' || isMobileMenuOpen ? 'text-black' : 'text-white'}`}>
+              V&A Workforce
             </span>
-            <span className={`text-[9px] font-black tracking-[0.4em] uppercase opacity-60 whitespace-nowrap mt-1 ${isScrolled || currentView !== 'home' || isMobileMenuOpen ? 'text-slate-600' : 'text-slate-400'}`}>
-              Workforce Solutions
+            <span className={`text-[8px] font-black tracking-[0.3em] uppercase opacity-60 whitespace-nowrap mt-0.5 ${isScrolled || currentView !== 'home' || isMobileMenuOpen ? 'text-slate-600' : 'text-slate-400'}`}>
+              Atlanta Staffing
             </span>
           </div>
         </button>
@@ -118,7 +118,7 @@ const Header: React.FC<HeaderProps> = ({ isScrolled, currentView, navigate }) =>
               <div className="p-8 bg-slate-50 rounded-3xl border border-slate-100">
                 <p className="text-[10px] font-black uppercase tracking-[0.4em] text-slate-400 mb-4">Direct Contact</p>
                 <a href="tel:4044470926" className="block text-2xl font-black text-black mb-2 hover:opacity-70 transition-opacity">(404) 447-0926</a>
-                <a href="mailto:info@vandahire.com" className="block text-sm font-bold text-slate-500">info@vandahire.com</a>
+                <a href="mailto:Polo@vassoc.com" className="block text-sm font-bold text-slate-500">Polo@vassoc.com</a>
               </div>
             </div>
           </div>

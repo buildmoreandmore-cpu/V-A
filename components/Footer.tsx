@@ -15,10 +15,12 @@ const Footer: React.FC<FooterProps> = ({ navigate }) => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20 mb-32">
           <div className="space-y-10">
             <div className="flex flex-col">
-              <span className="text-3xl font-black tracking-tighter uppercase text-white leading-none" itemProp="name">
-                V&A <span className="opacity-30 font-serif font-black italic">&</span> Workforce
-              </span>
-              <span className="text-[10px] font-black tracking-[0.5em] uppercase text-slate-600 mt-2">
+              <img
+                src="https://i.ibb.co/Ng71fhm8/logo.jpg"
+                alt="V&A Workforce - Atlanta Labor Staffing Agency"
+                className="h-16 w-auto object-contain mb-4 invert"
+              />
+              <span className="text-[10px] font-black tracking-[0.5em] uppercase text-slate-600">
                 Atlanta Labor Staffing Agency
               </span>
             </div>
