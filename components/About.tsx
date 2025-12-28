@@ -26,12 +26,13 @@ const About: React.FC<AboutProps> = ({ fullPage, navigate }) => {
         <div className="flex flex-col lg:flex-row items-center gap-24">
           <div className="lg:w-1/2 relative">
             <figure className="relative z-10 rounded-sm overflow-hidden shadow-2xl grayscale hover:grayscale-0 transition-all duration-700">
-              <img
-                src="https://images.unsplash.com/photo-1533282960533-51328aa49826?auto=format&fit=crop&q=80&w=1000"
-                alt="Atlanta industrial skyline - V&A Workforce serves warehouse, event, and construction staffing throughout Metro Atlanta, Georgia"
+              <video
+                src="/va.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
                 className="w-full h-auto object-cover min-h-[500px]"
-                loading="lazy"
-                itemProp="image"
               />
             </figure>
             {/* Logo-Style Badge */}
