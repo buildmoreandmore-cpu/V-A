@@ -47,12 +47,12 @@ const Footer: React.FC<FooterProps> = ({ navigate }) => {
           <div>
             <h4 className="text-white font-black uppercase tracking-[0.5em] text-[10px] mb-12">Services</h4>
             <nav aria-label="Labor services navigation">
-              <ul className="space-y-6 text-xs font-black tracking-[0.15em]">
-                <li><button onClick={() => navigate?.('labor')} className="hover:text-white transition-colors uppercase">Warehouse Staffing Atlanta</button></li>
-                <li><button onClick={() => navigate?.('events')} className="hover:text-white transition-colors uppercase">Event Staff Atlanta</button></li>
-                <li><button onClick={() => navigate?.('labor')} className="hover:text-white transition-colors uppercase">Construction Cleanup Crews</button></li>
-                <li><button onClick={() => navigate?.('labor')} className="hover:text-white transition-colors uppercase">Forklift Operators</button></li>
-                <li><button onClick={() => navigate?.('events')} className="hover:text-white transition-colors uppercase">Stadium Staffing</button></li>
+              <ul className="space-y-6 text-xs font-black tracking-[0.15em] text-left">
+                <li><button onClick={() => navigate?.('labor')} className="hover:text-white transition-colors uppercase text-left">Warehouse Staffing</button></li>
+                <li><button onClick={() => navigate?.('events')} className="hover:text-white transition-colors uppercase text-left">Event Staffing</button></li>
+                <li><button onClick={() => navigate?.('labor')} className="hover:text-white transition-colors uppercase text-left">Construction Cleanup</button></li>
+                <li><button onClick={() => navigate?.('labor')} className="hover:text-white transition-colors uppercase text-left">Forklift Operators</button></li>
+                <li><button onClick={() => navigate?.('events')} className="hover:text-white transition-colors uppercase text-left">Stadium Operations</button></li>
               </ul>
             </nav>
           </div>
