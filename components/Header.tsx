@@ -83,7 +83,7 @@ const Header: React.FC<HeaderProps> = ({ isScrolled, currentView, navigate }) =>
         >
           {isMobileMenuOpen ? (
             <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l18 18" />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
             </svg>
           ) : (
             <svg xmlns="http://www.w3.org/2000/svg" className={`h-8 w-8 ${isScrolled || currentView !== 'home' ? 'text-black' : 'text-white'}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -117,7 +117,7 @@ const Header: React.FC<HeaderProps> = ({ isScrolled, currentView, navigate }) =>
               
               <div className="p-8 bg-slate-50 rounded-3xl border border-slate-100">
                 <p className="text-[10px] font-black uppercase tracking-[0.4em] text-slate-400 mb-4">Direct Contact</p>
-                <a href="tel:4044470926" className="block text-2xl font-black text-black mb-2 hover:opacity-70 transition-opacity">(404) 447-0926</a>
+                <a href="tel:+14044470926" className="block text-2xl font-black text-black mb-2 hover:opacity-70 transition-opacity">(404) 447-0926</a>
                 <a href="mailto:Polo@vassoc.com" className="block text-sm font-bold text-slate-500">Polo@vassoc.com</a>
               </div>
             </div>

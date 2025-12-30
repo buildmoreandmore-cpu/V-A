@@ -30,7 +30,7 @@ const EventsSection: React.FC<EventsProps> = ({ fullPage, navigate }) => {
 
   return (
     <section
-      className={`${fullPage ? 'pt-40 pb-32' : 'py-32'} bg-black text-white relative overflow-hidden`}
+      className={`${fullPage ? 'pt-32 lg:pt-40 pb-16 lg:pb-32' : 'py-16 lg:py-32'} bg-black text-white relative overflow-hidden`}
       aria-label="Event Staffing Services Atlanta"
       itemScope
       itemType="https://schema.org/Service"
@@ -40,8 +40,8 @@ const EventsSection: React.FC<EventsProps> = ({ fullPage, navigate }) => {
 
       <div className="container mx-auto px-6 relative z-10">
         {fullPage && (
-          <header className="mb-24">
-            <h1 className="text-6xl md:text-9xl font-black tracking-tighter leading-[0.85] mb-10" itemProp="name">
+          <header className="mb-12 lg:mb-24">
+            <h1 className="text-5xl md:text-9xl font-black tracking-tighter leading-[0.85] mb-6 lg:mb-10" itemProp="name">
               Event <br/> <span className="opacity-30 italic font-serif">Staffing.</span>
             </h1>
             <p className="text-xl text-slate-400 font-medium max-w-2xl" itemProp="description">
@@ -50,7 +50,7 @@ const EventsSection: React.FC<EventsProps> = ({ fullPage, navigate }) => {
           </header>
         )}
 
-        <div className="flex flex-col lg:flex-row gap-24">
+        <div className="flex flex-col lg:flex-row gap-12 lg:gap-24">
           <div className="lg:w-1/2">
             {!fullPage && <h2 className="text-white text-xs font-black tracking-[0.5em] uppercase mb-10 opacity-50">Atlanta Event Staffing</h2>}
             <h3 className="text-5xl md:text-8xl font-black mb-12 tracking-tighter leading-none">

@@ -112,10 +112,10 @@ const App: React.FC = () => {
       <Footer navigate={navigate} />
 
       {/* Quick Apply Sticky CTA - Links to Careers */}
-      <div className="fixed bottom-8 right-8 z-40">
+      <div className="fixed bottom-4 right-4 md:bottom-8 md:right-8 z-40">
         <button
           onClick={() => navigate('careers')}
-          className="bg-black text-white font-black px-8 py-5 rounded-sm shadow-[0_20px_50px_rgba(0,0,0,0.3)] flex items-center justify-center hover:bg-slate-800 transition-all transform hover:scale-105 active:scale-95 tracking-[0.2em] uppercase text-xs"
+          className="bg-black text-white font-black px-5 py-4 md:px-8 md:py-5 rounded-sm shadow-[0_20px_50px_rgba(0,0,0,0.3)] flex items-center justify-center hover:bg-slate-800 transition-all transform hover:scale-105 active:scale-95 tracking-[0.2em] uppercase text-xs"
         >
           <span className="hidden md:inline mr-4 border-r border-white/20 pr-4">Join the Crew</span>
           <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">

@@ -21,13 +21,13 @@ const LaborServices: React.FC<LaborServicesProps> = ({ fullPage, navigate }) => 
 
   return (
     <section
-      className={`${fullPage ? 'pt-40 pb-32' : 'py-32'} bg-white`}
+      className={`${fullPage ? 'pt-32 lg:pt-40 pb-16 lg:pb-32' : 'py-16 lg:py-32'} bg-white`}
       aria-label="Labor Staffing Services Atlanta"
       itemScope
       itemType="https://schema.org/Service"
     >
       <div className="container mx-auto px-6">
-        <header className="max-w-4xl mb-24">
+        <header className="max-w-4xl mb-12 lg:mb-24">
           {fullPage ? (
             <h1 className="text-6xl md:text-9xl font-black text-black tracking-tighter leading-[0.85] mb-10" itemProp="name">
               Labor <br/> <span className="opacity-30 italic font-serif">Staffing.</span>
@@ -62,8 +62,8 @@ const LaborServices: React.FC<LaborServicesProps> = ({ fullPage, navigate }) => 
         </div>
 
         {fullPage && (
-          <div className="mt-48 p-16 lg:p-32 bg-black text-white rounded-sm">
-            <div className="flex flex-col lg:flex-row items-center gap-24">
+          <div className="mt-24 lg:mt-48 p-8 md:p-16 lg:p-32 bg-black text-white rounded-sm">
+            <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-24">
               <div className="lg:w-1/2">
                 <h4 className="text-5xl font-black tracking-tighter mb-10">Same-Day <br/> Deployment.</h4>
                 <p className="text-slate-400 text-xl mb-14 font-medium leading-relaxed">

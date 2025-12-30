@@ -7,12 +7,12 @@ interface FooterProps {
 const Footer: React.FC<FooterProps> = ({ navigate }) => {
   return (
     <footer
-      className="bg-black text-slate-500 py-32 border-t border-white/5"
+      className="bg-black text-slate-500 py-16 lg:py-32 border-t border-white/5"
       itemScope
       itemType="https://schema.org/Organization"
     >
       <div className="container mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20 mb-32">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-20 mb-16 lg:mb-32">
           <div className="space-y-10">
             <div className="flex flex-col">
               <img
