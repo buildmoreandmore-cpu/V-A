@@ -27,7 +27,7 @@ const SplashScreen: React.FC<SplashScreenProps> = ({ onComplete }) => {
       }`}
     >
       <div
-        className={`relative z-10 flex flex-col items-center transition-all duration-1000 ease-out ${
+        className={`relative z-10 flex flex-col items-center text-center px-6 transition-all duration-1000 ease-out ${
           fadeIn ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
         }`}
       >
@@ -35,12 +35,12 @@ const SplashScreen: React.FC<SplashScreenProps> = ({ onComplete }) => {
           <img
             src="https://i.ibb.co/NcVBDvH/slazzer-preview-z7e0n.png"
             alt="V&A Logo"
-            className="h-24 w-auto invert"
+            className="h-20 md:h-24 w-auto invert"
           />
         </div>
 
         <h1
-          className={`text-white text-3xl md:text-4xl font-light tracking-[0.3em] uppercase mb-4 transition-all duration-1000 delay-300 ${
+          className={`text-white text-2xl md:text-4xl font-light tracking-[0.15em] md:tracking-[0.3em] uppercase mb-4 transition-all duration-1000 delay-300 ${
             fadeIn ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
           }`}
           style={{ fontFamily: "'Inter', sans-serif" }}
@@ -49,7 +49,7 @@ const SplashScreen: React.FC<SplashScreenProps> = ({ onComplete }) => {
         </h1>
 
         <p
-          className={`text-slate-400 text-sm md:text-base tracking-[0.4em] uppercase transition-all duration-1000 delay-500 ${
+          className={`text-slate-400 text-xs md:text-base tracking-[0.2em] md:tracking-[0.4em] uppercase transition-all duration-1000 delay-500 ${
             fadeIn ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
           }`}
         >
@@ -58,7 +58,7 @@ const SplashScreen: React.FC<SplashScreenProps> = ({ onComplete }) => {
 
         <div
           className={`mt-8 h-px bg-gradient-to-r from-transparent via-slate-600 to-transparent transition-all duration-1000 delay-700 ${
-            fadeIn ? 'w-32 opacity-100' : 'w-0 opacity-0'
+            fadeIn ? 'w-24 md:w-32 opacity-100' : 'w-0 opacity-0'
           }`}
         />
       </div>
