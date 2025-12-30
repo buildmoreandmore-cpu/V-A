@@ -17,11 +17,11 @@ const Footer: React.FC<FooterProps> = ({ navigate }) => {
             <div className="flex flex-col">
               <img
                 src="https://i.ibb.co/NcVBDvH/slazzer-preview-z7e0n.png"
-                alt="V&A Workforce - Atlanta Labor Staffing Agency"
+                alt="V&A Workforce - Atlanta Contract Services"
                 className="h-16 w-auto object-contain mb-4 invert"
               />
               <span className="text-[10px] font-black tracking-[0.5em] uppercase text-slate-600">
-                Nationwide Event & Labor Staffing
+                Contract Service Provider
               </span>
             </div>
             <p className="text-sm leading-relaxed font-medium" itemProp="description">

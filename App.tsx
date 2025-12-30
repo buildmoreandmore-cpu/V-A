@@ -3,6 +3,8 @@ import { Routes, Route, useNavigate, useLocation } from 'react-router-dom';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
+import WhyChooseUs from './components/WhyChooseUs';
+import Industries from './components/Industries';
 import EventsSection from './components/EventsSection';
 import LaborServices from './components/LaborServices';
 import Employment from './components/Employment';
@@ -84,6 +86,8 @@ const App: React.FC = () => {
           <>
             <Hero navigate={navigate} />
             <About navigate={navigate} />
+            <WhyChooseUs navigate={navigate} />
+            <Industries navigate={navigate} />
             <EventsSection navigate={navigate} />
             <LaborServices navigate={navigate} />
             <Stats />

@@ -51,7 +51,7 @@ const Header: React.FC<HeaderProps> = ({ isScrolled, currentView, navigate }) =>
               V&A Workforce
             </span>
             <span className={`text-[8px] font-black tracking-[0.3em] uppercase opacity-60 whitespace-nowrap mt-0.5 ${isScrolled || currentView !== 'home' || isMobileMenuOpen ? 'text-slate-600' : 'text-slate-400'}`}>
-              Atlanta Staffing
+              Contract Services
             </span>
           </div>
         </button>
@@ -71,7 +71,7 @@ const Header: React.FC<HeaderProps> = ({ isScrolled, currentView, navigate }) =>
             onClick={() => handleNav('contact')} 
             className="bg-black hover:bg-slate-800 text-white px-8 py-3 rounded font-black text-xs transition-all shadow-xl hover:shadow-black/20 uppercase tracking-[0.2em]"
           >
-            Get Staffed
+            Request Staff
           </button>
         </div>
 
