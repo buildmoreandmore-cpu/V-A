@@ -7,21 +7,21 @@ interface FooterProps {
 const Footer: React.FC<FooterProps> = ({ navigate }) => {
   return (
     <footer
-      className="bg-black text-slate-500 py-32 border-t border-white/5"
+      className="bg-black text-slate-500 py-16 lg:py-32 border-t border-white/5"
       itemScope
       itemType="https://schema.org/Organization"
     >
       <div className="container mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20 mb-32">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-20 mb-16 lg:mb-32">
           <div className="space-y-10">
             <div className="flex flex-col">
               <img
                 src="https://i.ibb.co/NcVBDvH/slazzer-preview-z7e0n.png"
-                alt="V&A Workforce - Atlanta Labor Staffing Agency"
+                alt="V&A Workforce - Atlanta Contract Services"
                 className="h-16 w-auto object-contain mb-4 invert"
               />
               <span className="text-[10px] font-black tracking-[0.5em] uppercase text-slate-600">
-                Nationwide Event & Labor Staffing
+                Contract Service Provider
               </span>
             </div>
             <p className="text-sm leading-relaxed font-medium" itemProp="description">

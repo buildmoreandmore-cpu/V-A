@@ -22,18 +22,18 @@ const Employment: React.FC<EmploymentProps> = ({ fullPage, navigate }) => {
     alert('Application submitted! We will contact you within 48 hours.');
   };
   return (
-    <div className={`${fullPage ? 'pt-40 pb-32' : 'py-32'} bg-slate-50`}>
+    <div className={`${fullPage ? 'pt-32 lg:pt-40 pb-16 lg:pb-32' : 'py-16 lg:py-32'} bg-slate-50`}>
       <div className="container mx-auto px-6">
         {fullPage && (
-          <div className="mb-24 text-center">
-            <h1 className="text-6xl md:text-9xl font-black text-black tracking-tighter leading-none mb-10">
+          <div className="mb-12 lg:mb-24 text-center">
+            <h1 className="text-5xl md:text-9xl font-black text-black tracking-tighter leading-none mb-6 lg:mb-10">
               The <span className="opacity-30 italic font-serif">Crew.</span>
             </h1>
             <p className="text-xl text-slate-500 font-medium max-w-2xl mx-auto tracking-tight">V&A Workforce provides professional pathways for the modern industrial laborer.</p>
           </div>
         )}
 
-        <div className="flex flex-col lg:flex-row gap-24 items-center">
+        <div className="flex flex-col lg:flex-row gap-12 lg:gap-24 items-center">
           <div className="lg:w-1/2">
             {!fullPage && <h2 className="text-black text-xs font-black tracking-[0.5em] uppercase mb-10">Careers</h2>}
             <h3 className="text-5xl md:text-7xl font-black text-black tracking-tighter mb-12 leading-[1]">
@@ -74,7 +74,7 @@ const Employment: React.FC<EmploymentProps> = ({ fullPage, navigate }) => {
               <button onClick={() => navigate?.('contact')} className="bg-black text-white px-12 py-6 rounded-sm font-black text-xs tracking-[0.2em] uppercase hover:bg-slate-800 transition-all text-center shadow-2xl">
                 Apply to Crew
               </button>
-              <a href="tel:4044470926" className="border-2 border-black text-black px-12 py-6 rounded-sm font-black text-xs tracking-[0.2em] uppercase hover:bg-black hover:text-white transition-all text-center">
+              <a href="tel:+14044470926" className="border-2 border-black text-black px-12 py-6 rounded-sm font-black text-xs tracking-[0.2em] uppercase hover:bg-black hover:text-white transition-all text-center">
                 Contact Recruiter
               </a>
             </div>
@@ -105,7 +105,7 @@ const Employment: React.FC<EmploymentProps> = ({ fullPage, navigate }) => {
 
         {fullPage && (
           <>
-            <div className="mt-48 bg-white p-16 lg:p-32 shadow-sm border border-slate-100">
+            <div className="mt-24 lg:mt-48 bg-white p-8 md:p-16 lg:p-32 shadow-sm border border-slate-100">
               <div className="max-w-4xl mx-auto">
                 <h4 className="text-4xl font-black text-black mb-16 tracking-tighter text-center uppercase">V&A Intake Protocol</h4>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-16">

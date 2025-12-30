@@ -8,22 +8,22 @@ interface AboutProps {
 const About: React.FC<AboutProps> = ({ fullPage, navigate }) => {
   return (
     <section
-      className={`${fullPage ? 'pt-40 pb-32' : 'py-32'} bg-white overflow-hidden`}
+      className={`${fullPage ? 'pt-32 lg:pt-40 pb-16 lg:pb-32' : 'py-16 lg:py-32'} bg-white overflow-hidden`}
       aria-label="About V&A Workforce - Atlanta Staffing Agency"
       itemScope
       itemType="https://schema.org/Organization"
     >
       <div className="container mx-auto px-6">
         {fullPage && (
-          <header className="mb-24 text-center max-w-4xl mx-auto">
-            <h1 className="text-6xl md:text-8xl font-black text-black tracking-tighter leading-none mb-8">
+          <header className="mb-12 lg:mb-24 text-center max-w-4xl mx-auto">
+            <h1 className="text-5xl md:text-8xl font-black text-black tracking-tighter leading-none mb-6 lg:mb-8">
               Reliability <span className="opacity-30 font-serif font-black italic">&</span> Integrity.
             </h1>
             <p className="text-xl text-slate-500 font-medium tracking-tight">Atlanta's standard for logistical excellence and workforce integrity. Serving Fulton County, DeKalb County, Gwinnett County, and the entire Metro Atlanta region.</p>
           </header>
         )}
 
-        <div className="flex flex-col lg:flex-row items-center gap-24">
+        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-24">
           <div className="lg:w-1/2 relative">
             <figure className="relative z-10 rounded-sm overflow-hidden shadow-2xl grayscale hover:grayscale-0 transition-all duration-700">
               <video
@@ -89,8 +89,8 @@ const About: React.FC<AboutProps> = ({ fullPage, navigate }) => {
         </div>
 
         {fullPage && (
-          <div className="mt-48 pt-24 border-t border-slate-100">
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-20">
+          <div className="mt-24 lg:mt-48 pt-12 lg:pt-24 border-t border-slate-100">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-20">
               <article>
                 <h4 className="text-2xl font-black text-black mb-8 uppercase tracking-tighter">Corporate Mission</h4>
                 <p className="text-slate-500 leading-relaxed font-medium">To lead Atlanta's staffing industry through unmatched accountability. We don't just fill roles at Mercedes-Benz Stadium, GWCC, or your warehouse—we build the infrastructure of success for our partners across Georgia.</p>

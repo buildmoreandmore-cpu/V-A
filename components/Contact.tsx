@@ -9,15 +9,15 @@ interface ContactProps {
 const Contact: React.FC<ContactProps> = ({ fullPage, title, navigate }) => {
   return (
     <section
-      className={`${fullPage ? 'pt-40 pb-32' : 'py-32'} bg-white`}
+      className={`${fullPage ? 'pt-32 lg:pt-40 pb-16 lg:pb-32' : 'py-16 lg:py-32'} bg-white`}
       aria-label="Contact V&A Workforce - Atlanta Staffing Agency"
       itemScope
       itemType="https://schema.org/LocalBusiness"
     >
       <div className="container mx-auto px-6">
         {fullPage && (
-          <header className="mb-24">
-            <h1 className="text-6xl md:text-9xl font-black text-black tracking-tighter leading-none mb-10">
+          <header className="mb-12 lg:mb-24">
+            <h1 className="text-5xl md:text-9xl font-black text-black tracking-tighter leading-none mb-6 lg:mb-10">
               Contact <br/> <span className="opacity-30 italic font-serif">Us.</span>
             </h1>
             <p className="text-xl text-slate-500 font-medium max-w-2xl tracking-tight leading-relaxed">
@@ -27,7 +27,7 @@ const Contact: React.FC<ContactProps> = ({ fullPage, title, navigate }) => {
         )}
 
         <div className="bg-white rounded-sm overflow-hidden shadow-[0_50px_100px_rgba(0,0,0,0.1)] flex flex-col lg:flex-row border border-slate-100">
-          <div className="lg:w-2/5 bg-black p-16 lg:p-24 text-white relative overflow-hidden">
+          <div className="lg:w-2/5 bg-black p-8 md:p-16 lg:p-24 text-white relative overflow-hidden">
             <div className="absolute inset-0 bg-white/5 skew-y-12 transform origin-bottom-right pointer-events-none"></div>
             
             <h2 className="text-slate-500 text-[10px] font-black tracking-[0.5em] uppercase mb-10 relative z-10">Communications</h2>
@@ -66,13 +66,13 @@ const Contact: React.FC<ContactProps> = ({ fullPage, title, navigate }) => {
                   <div className="text-slate-500 text-[9px] uppercase tracking-[0.4em] font-black mb-3">Email Us</div>
                   <a href="mailto:Polo@vassoc.com" className="text-sm font-bold opacity-80 mb-1 block hover:opacity-100 transition-opacity" itemProp="email">President: Polo@vassoc.com</a>
                   <a href="mailto:Jasia@vassoc.com" className="text-sm font-bold opacity-80 mb-1 block hover:opacity-100 transition-opacity">Accounts: Jasia@vassoc.com</a>
-                  <a href="mailto:Shaun@vassov.com" className="text-sm font-bold opacity-80 block hover:opacity-100 transition-opacity">Admin: Shaun@vassov.com</a>
+                  <a href="mailto:Shaun@vassoc.com" className="text-sm font-bold opacity-80 block hover:opacity-100 transition-opacity">Admin: Shaun@vassoc.com</a>
                 </div>
               </div>
             </div>
           </div>
           
-          <div className="lg:w-3/5 p-16 lg:p-24 bg-white">
+          <div className="lg:w-3/5 p-8 md:p-16 lg:p-24 bg-white">
             <h4 className="text-3xl font-black text-black mb-14 tracking-tighter uppercase border-b border-slate-100 pb-8">Inquiry Protocol</h4>
             <form className="space-y-10" onSubmit={(e) => e.preventDefault()}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
