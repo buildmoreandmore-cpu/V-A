@@ -43,16 +43,16 @@ const LaborServices: React.FC<LaborServicesProps> = ({ fullPage, navigate }) => 
           </p>
         </header>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-0 border-t border-l border-slate-100">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 md:gap-0 md:border-t md:border-l md:border-slate-100">
           {services.map((s, i) => (
-            <div key={i} className="group p-6 md:p-10 border-r border-b border-slate-100 hover:bg-black transition-all duration-500">
-              <div className="w-8 h-1 bg-black mb-6 md:mb-10 group-hover:bg-white group-hover:w-full transition-all duration-500"></div>
+            <div key={i} className="group p-6 md:p-10 border border-slate-100 md:border-0 md:border-r md:border-b md:border-slate-100 hover:bg-black transition-all duration-500 text-center md:text-left">
+              <div className="w-8 h-1 bg-black mb-6 md:mb-10 group-hover:bg-white group-hover:w-full transition-all duration-500 mx-auto md:mx-0"></div>
               <h4 className="text-sm font-black uppercase tracking-[0.2em] text-black group-hover:text-white mb-4 md:mb-6 leading-tight">{s.name}</h4>
               <p className="text-slate-500 group-hover:text-slate-400 text-xs font-medium leading-relaxed">
                 {s.desc}
               </p>
               <div className="mt-6 md:mt-10 opacity-0 group-hover:opacity-100 transition-all transform translate-y-4 group-hover:translate-y-0">
-                <button onClick={() => navigate?.('contact')} className="text-white text-[10px] font-black tracking-[0.3em] uppercase flex items-center border-b border-white/20 pb-1">
+                <button onClick={() => navigate?.('contact')} className="text-white text-[10px] font-black tracking-[0.3em] uppercase inline-flex items-center border-b border-white/20 pb-1">
                   Deploy Crew
                   <svg className="w-3 h-3 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
                 </button>
