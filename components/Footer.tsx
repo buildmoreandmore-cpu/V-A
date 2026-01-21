@@ -37,11 +37,8 @@ const Footer: React.FC<FooterProps> = ({ navigate }) => {
               <span itemProp="addressLocality">Atlanta</span>, <span itemProp="addressRegion">GA</span> <span itemProp="postalCode">30303</span>
             </address>
             <div className="space-y-2">
-              <a href="tel:+14044470926" className="block text-white text-sm font-black hover:text-slate-300 transition-colors" itemProp="telephone">
-                (404) 447-0926
-              </a>
-              <a href="tel:+14048617794" className="block text-slate-400 text-sm font-bold hover:text-white transition-colors">
-                (404) 861-7794
+              <a href="tel:+14048617794" className="block text-white text-sm font-black hover:text-slate-300 transition-colors" itemProp="telephone">
+                404.861.7794
               </a>
             </div>
           </div>
@@ -84,7 +81,7 @@ const Footer: React.FC<FooterProps> = ({ navigate }) => {
         {/* SEO Keywords Footer Block */}
         <div className="py-8 border-t border-b border-white/5 mb-12">
           <p className="text-[10px] text-slate-600 leading-relaxed text-center">
-            <strong className="text-slate-500">National Event Staffing</strong> | Lollapalooza Staff | Bonnaroo Crews | EDC Event Labor | Formula 1 Staffing | NASCAR Event Crews | Netflix Production Labor | Festival Staffing Nationwide | Atlanta Labor Agency | Warehouse Staffing | Construction Cleanup | Stadium Operations | Convention Center Labor | GWCC Staffing
+            <strong className="text-slate-500">National Event Services</strong> | Lollapalooza Staff | Bonnaroo Crews | EDC Event Labor | Formula 1 Services | NASCAR Event Crews | Netflix Production Labor | Festival Services Nationwide | Atlanta Labor Provider | Warehouse Labor | Construction Cleanup | Stadium Operations | Convention Center Labor | GWCC Services
           </p>
         </div>
 

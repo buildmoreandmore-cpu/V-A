@@ -8,7 +8,7 @@ const Hero: React.FC<HeroProps> = ({ navigate }) => {
   return (
     <section
       className="relative min-h-screen flex items-center bg-varist-hero overflow-hidden"
-      aria-label="Atlanta Labor Staffing Agency - V&A Workforce"
+      aria-label="Atlanta Premium Contract Labor Service Provider - V&A Workforce"
       itemScope
       itemType="https://schema.org/Service"
     >
@@ -41,11 +41,11 @@ const Hero: React.FC<HeroProps> = ({ navigate }) => {
             <strong className="text-white">Atlanta's trusted workforce solutions.</strong> Same-day warehouse workers, event crews, construction cleanup, and industrial labor. <span className="text-white">Vetted crews available 24/7.</span>
           </p>
 
-          {/* Hidden SEO content - keeps staffing agency keywords for search */}
+          {/* Hidden SEO content */}
           <div className="sr-only">
-            <p>Atlanta's premier labor staffing agency providing temporary workers</p>
+            <p>Atlanta's premier contract labor service provider</p>
             <p itemProp="areaServed">Serving Atlanta, Buckhead, Midtown, Downtown, Alpharetta, Marietta, Sandy Springs, Decatur, Fulton County, DeKalb County, Gwinnett County, and all of Metro Atlanta, Georgia.</p>
-            <p>Emergency staffing Atlanta | Same day temp workers | Warehouse staffing agency Atlanta | Event staffing Mercedes-Benz Stadium | Georgia World Congress Center labor | Forklift operators Atlanta | Construction cleanup crew Atlanta | Festival staff Atlanta | Fulton Industrial staffing | Janitorial services Atlanta</p>
+            <p>Emergency staffing Atlanta | Same day temp workers | Warehouse labor Atlanta | Event staffing | Georgia World Congress Center labor | Forklift operators Atlanta | Construction cleanup crew Atlanta | Festival staff Atlanta | Fulton Industrial staffing | Janitorial services Atlanta</p>
           </div>
 
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-5 animate-fade-in-up delay-200">
@@ -71,14 +71,14 @@ const Hero: React.FC<HeroProps> = ({ navigate }) => {
           {/* Call-to-action with phone */}
           <div className="mt-10 animate-fade-in-up delay-200">
             <a
-              href="tel:+14044470926"
+              href="tel:+14048617794"
               className="inline-flex items-center text-white/70 hover:text-white transition-colors text-sm font-medium"
-              aria-label="Call V&A Workforce at 404-447-0926"
+              aria-label="Call V&A Workforce at 404.861.7794"
             >
               <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
               </svg>
-              <span itemProp="telephone">Need workers today? Call (404) 447-0926</span>
+              <span itemProp="telephone">Need workers today? Call 404.861.7794</span>
             </a>
           </div>
 

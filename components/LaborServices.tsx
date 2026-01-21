@@ -13,7 +13,7 @@ const LaborServices: React.FC<LaborServicesProps> = ({ fullPage, navigate }) => 
     { name: 'Facility Maintenance', desc: 'Janitorial staffing and recurring maintenance crews for corporate facilities, office buildings, and industrial sites.' },
     { name: 'Film Production Crews', desc: 'Specialized set labor, track mat installation, and production support for Tyler Perry Studios and Atlanta film sets.' },
     { name: 'Logistics & Loading', desc: 'Warehouse associates, pickers, packers, and fleet support labor for Atlanta-area fulfillment centers.' },
-    { name: 'Stadium Operations', desc: 'Rapid-scaling turnover crews for Mercedes-Benz Stadium, State Farm Arena, and Truist Park events.' },
+    { name: 'Stadium Operations', desc: 'Rapid-scaling turnover crews for State Farm Arena, Truist Park, and major venue events.' },
     { name: 'Post-Build Cleaning', desc: 'Final clean and punch-out crews for new construction. Luxury residential and commercial site polish.' },
     { name: 'Site Preparation', desc: 'Landscaping labor, grading support, and civil works crews for Atlanta construction projects.' },
     { name: 'Industrial Support', desc: 'Manufacturing labor, assembly workers, and production line staffing for Georgia industrial facilities.' }
@@ -70,8 +70,8 @@ const LaborServices: React.FC<LaborServicesProps> = ({ fullPage, navigate }) => 
                   From a tactical team of 5 to a massive workforce of 500+, V&A Workforce manages the entire operational lifecycle. Need <strong>emergency warehouse workers</strong> for your Fulton Industrial facility? <strong>Last-minute construction cleanup</strong> crew? We deploy vetted Atlanta labor within hours.
                 </p>
                 <div className="mb-6 lg:mb-10">
-                  <a href="tel:+14044470926" className="text-white text-lg font-bold hover:text-slate-300 transition-colors">
-                    Call Now: (404) 447-0926
+                  <a href="tel:+14048617794" className="text-white text-lg font-bold hover:text-slate-300 transition-colors">
+                    Call Now: 404.861.7794
                   </a>
                 </div>
                 <button onClick={() => navigate?.('contact')} className="bg-white text-black px-10 md:px-12 py-5 md:py-6 rounded-sm font-black uppercase tracking-[0.2em] text-xs hover:bg-slate-200 transition-all shadow-2xl">Request Workers Today</button>
@@ -84,7 +84,7 @@ const LaborServices: React.FC<LaborServicesProps> = ({ fullPage, navigate }) => 
                   </div>
                   <div className="bg-white/5 p-6 md:p-10 border border-white/10 text-center lg:text-left">
                     <div className="text-white font-black text-3xl md:text-4xl mb-2 md:mb-3 tracking-tighter font-serif italic">100%</div>
-                    <div className="text-[9px] md:text-[10px] uppercase font-black text-slate-500 tracking-[0.3em] md:tracking-[0.4em]">W-2 Compliant</div>
+                    <div className="text-[9px] md:text-[10px] uppercase font-black text-slate-500 tracking-[0.3em] md:tracking-[0.4em]">Professional Crews</div>
                   </div>
                   <div className="bg-white/5 p-6 md:p-10 border border-white/10 text-center lg:text-left">
                     <div className="text-white font-black text-3xl md:text-4xl mb-2 md:mb-3 tracking-tighter font-serif italic">Vetted</div>

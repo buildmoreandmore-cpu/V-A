@@ -8,7 +8,7 @@ const Careers: React.FC<CareersProps> = () => {
   useEffect(() => {
     document.title = 'Join Our Crew | Careers at V&A Workforce | Atlanta Jobs';
     return () => {
-      document.title = 'V&A Workforce | Atlanta Labor Staffing Agency';
+      document.title = 'V&A Workforce | Atlanta Premium Contract Labor Service Provider';
     };
   }, []);
 
@@ -18,7 +18,7 @@ const Careers: React.FC<CareersProps> = () => {
     { num: '03', title: 'Travel Opportunities', desc: 'Work major festivals nationwide - Lollapalooza, Bonnaroo, EDC' },
     { num: '04', title: 'Career Growth', desc: 'Clear pathways to supervisor and management roles' },
     { num: '05', title: 'Safety Training', desc: 'Professional certification and safety training provided' },
-    { num: '06', title: 'Premier Venues', desc: 'Work at Mercedes-Benz Stadium, GWCC, and more' }
+    { num: '06', title: 'Premier Venues', desc: 'Work at GWCC, State Farm Arena, and more' }
   ];
 
   const [formData, setFormData] = useState({
@@ -64,10 +64,10 @@ const Careers: React.FC<CareersProps> = () => {
                 </svg>
               </a>
               <a
-                href="tel:+14044470926"
+                href="tel:+14048617794"
                 className="border-2 border-white text-white px-10 py-5 font-black text-sm uppercase tracking-wider hover:bg-white hover:text-black transition-colors"
               >
-                Call (404) 447-0926
+                Call 404.861.7794
               </a>
             </div>
           </div>

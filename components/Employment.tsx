@@ -74,7 +74,7 @@ const Employment: React.FC<EmploymentProps> = ({ fullPage, navigate }) => {
               <button onClick={() => navigate?.('contact')} className="bg-black text-white px-12 py-6 rounded-sm font-black text-xs tracking-[0.2em] uppercase hover:bg-slate-800 transition-all text-center shadow-2xl">
                 Apply to Crew
               </button>
-              <a href="tel:+14044470926" className="border-2 border-black text-black px-12 py-6 rounded-sm font-black text-xs tracking-[0.2em] uppercase hover:bg-black hover:text-white transition-all text-center">
+              <a href="tel:+14048617794" className="border-2 border-black text-black px-12 py-6 rounded-sm font-black text-xs tracking-[0.2em] uppercase hover:bg-black hover:text-white transition-all text-center">
                 Contact Recruiter
               </a>
             </div>

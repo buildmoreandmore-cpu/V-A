@@ -45,7 +45,7 @@ const EventsSection: React.FC<EventsProps> = ({ fullPage, navigate }) => {
               Event <br/> <span className="opacity-30 italic font-serif">Staffing.</span>
             </h1>
             <p className="text-xl text-slate-400 font-medium max-w-2xl" itemProp="description">
-              <strong>Nationwide event staffing</strong> from our Atlanta headquarters. Professional crews for Lollapalooza, Bonnaroo, EDC, Formula 1, NASCAR, and major festivals coast to coast. From Mercedes-Benz Stadium to venues across America.
+              <strong>Nationwide event staffing</strong> from our Atlanta headquarters. Professional crews for Lollapalooza, Bonnaroo, EDC, Formula 1, NASCAR, and major festivals coast to coast. From Atlanta to venues across America.
             </p>
           </header>
         )}
@@ -57,7 +57,7 @@ const EventsSection: React.FC<EventsProps> = ({ fullPage, navigate }) => {
               Mass Scale. <br/> <span className="opacity-30 italic font-serif">Absolute Detail.</span>
             </h3>
             <p className="text-slate-400 text-xl mb-16 font-medium max-w-xl leading-relaxed">
-              From <strong>track mat installation</strong> at film sets to <strong>zero-waste festival cleanup</strong>, our teams are the invisible engine behind Atlanta's most complex events. We staff <strong>Mercedes-Benz Stadium</strong> game days, <strong>GWCC conventions</strong>, and every major venue in between.
+              From <strong>track mat installation</strong> at film sets to <strong>zero-waste festival cleanup</strong>, our teams are the invisible engine behind Atlanta's most complex events. We staff <strong>major venue</strong> game days, <strong>GWCC conventions</strong>, and every venue in between.
             </p>
             
             <div className="space-y-12">
@@ -92,9 +92,8 @@ const EventsSection: React.FC<EventsProps> = ({ fullPage, navigate }) => {
 
                 <div className="mt-12 p-12 bg-white/5 border border-white/10">
                   <h4 className="text-2xl font-black uppercase tracking-tighter mb-8">Atlanta Home Base Venues</h4>
-                  <p className="text-slate-400 mb-10 font-medium">Our Atlanta headquarters provides crews for local venues including <strong>Falcons and United games</strong>, <strong>Hawks games</strong>, and <strong>Braves games</strong>.</p>
+                  <p className="text-slate-400 mb-10 font-medium">Our Atlanta headquarters provides crews for local venues including <strong>Hawks games</strong> and <strong>Braves games</strong>.</p>
                   <div className="flex flex-wrap gap-4">
-                    <span className="px-5 py-2 bg-white/10 text-white border border-white/20 text-[10px] font-black uppercase tracking-[0.2em]">Mercedes-Benz Stadium</span>
                     <span className="px-5 py-2 bg-white/10 text-white border border-white/20 text-[10px] font-black uppercase tracking-[0.2em]">State Farm Arena</span>
                     <span className="px-5 py-2 bg-white/10 text-white border border-white/20 text-[10px] font-black uppercase tracking-[0.2em]">Georgia World Congress Center</span>
                     <span className="px-5 py-2 bg-white/10 text-white border border-white/20 text-[10px] font-black uppercase tracking-[0.2em]">Truist Park</span>
@@ -111,7 +110,7 @@ const EventsSection: React.FC<EventsProps> = ({ fullPage, navigate }) => {
               <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&q=80&w=400" className="shadow-2xl h-96 w-full object-cover" alt="Convention staffing Georgia World Congress Center Atlanta - trade show setup and teardown crews" loading="lazy" />
             </div>
             <div className="space-y-4">
-              <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&q=80&w=400" className="shadow-2xl h-96 w-full object-cover" alt="Concert event staff Atlanta - Mercedes-Benz Stadium and State Farm Arena staffing services" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&q=80&w=400" className="shadow-2xl h-96 w-full object-cover" alt="Concert event staff Atlanta - State Farm Arena staffing services" loading="lazy" />
               <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=80&w=400" className="shadow-2xl h-80 w-full object-cover" alt="Stage setup crews and event production labor Atlanta Georgia - festival and venue support" loading="lazy" />
             </div>
           </figure>

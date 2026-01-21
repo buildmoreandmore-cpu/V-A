@@ -11,7 +11,7 @@ const EventPage: React.FC = () => {
       document.title = `${event.title} | V&A Workforce`;
     }
     return () => {
-      document.title = 'V&A Workforce | Atlanta Labor Staffing Agency';
+      document.title = 'V&A Workforce | Atlanta Premium Contract Labor Service Provider';
     };
   }, [event]);
 
@@ -78,10 +78,10 @@ const EventPage: React.FC = () => {
                 <p className="text-slate-400">Contact us for a custom quote.</p>
               </div>
               <a
-                href="tel:+14044470926"
+                href="tel:+14048617794"
                 className="bg-white text-black px-8 py-4 font-black text-sm uppercase tracking-wider hover:bg-slate-200 transition-colors"
               >
-                Call (404) 447-0926
+                Call 404.861.7794
               </a>
             </div>
           </div>

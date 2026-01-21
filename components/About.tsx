@@ -9,7 +9,7 @@ const About: React.FC<AboutProps> = ({ fullPage, navigate }) => {
   return (
     <section
       className={`${fullPage ? 'pt-32 lg:pt-40 pb-16 lg:pb-32' : 'py-16 lg:py-32'} bg-white overflow-hidden`}
-      aria-label="About V&A Workforce - Atlanta Staffing Agency"
+      aria-label="About V&A Workforce - Atlanta Premium Contract Labor Service Provider"
       itemScope
       itemType="https://schema.org/Organization"
     >
@@ -45,14 +45,14 @@ const About: React.FC<AboutProps> = ({ fullPage, navigate }) => {
           <div className="lg:w-1/2">
             <h2 className="text-black text-xs font-black tracking-[0.5em] uppercase mb-8 flex items-center">
               <span className="w-12 h-[2px] bg-black mr-6"></span>
-              Atlanta's Trusted Staffing Partner
+              Atlanta's Trusted Labor Partner
             </h2>
             <h3 className="text-5xl md:text-7xl font-black text-black mb-10 leading-[1] tracking-tighter" itemProp="name">
               A Force for <br/>
               <span className="italic font-serif opacity-40">Precision.</span>
             </h3>
             <p className="text-slate-600 text-xl mb-12 leading-relaxed font-medium" itemProp="description">
-              <strong itemProp="legalName">Varist & Associates (V&A Workforce)</strong> is Atlanta's strategic labor staffing powerhouse. Based in <span itemProp="addressLocality">Downtown Atlanta</span> on Peachtree Street, we specialize in <strong>same-day workforce deployment</strong> for warehouses, events, construction sites, and industrial facilities across <strong>Metro Atlanta and Georgia</strong>.
+              <strong itemProp="legalName">Varist & Associates (V&A Workforce)</strong> is Atlanta's premium contract labor service provider. Based in <span itemProp="addressLocality">Downtown Atlanta</span> on Peachtree Street, we specialize in <strong>same-day workforce deployment</strong> for warehouses, events, construction sites, and industrial facilities across <strong>Metro Atlanta and Georgia</strong>.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
@@ -62,7 +62,7 @@ const About: React.FC<AboutProps> = ({ fullPage, navigate }) => {
                 </div>
                 <div>
                   <h4 className="font-black text-black mb-2 uppercase tracking-widest text-xs">Vetted & Background-Checked Crews</h4>
-                  <p className="text-slate-500 text-sm font-medium leading-relaxed">Every worker undergoes thorough <strong>background screening</strong> and safety training. Unlike gig platforms, we provide supervised professional crews you can trust at Mercedes-Benz Stadium, GWCC, or your Fulton Industrial warehouse.</p>
+                  <p className="text-slate-500 text-sm font-medium leading-relaxed">Every worker undergoes thorough <strong>background screening</strong> and safety training. Unlike gig platforms, we provide supervised professional crews you can trust at GWCC or your Fulton Industrial warehouse.</p>
                 </div>
               </article>
               <article className="flex items-start space-x-6">
@@ -93,7 +93,7 @@ const About: React.FC<AboutProps> = ({ fullPage, navigate }) => {
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-20">
               <article>
                 <h4 className="text-2xl font-black text-black mb-8 uppercase tracking-tighter">Corporate Mission</h4>
-                <p className="text-slate-500 leading-relaxed font-medium">To lead Atlanta's staffing industry through unmatched accountability. We don't just fill roles at Mercedes-Benz Stadium, GWCC, or your warehouse—we build the infrastructure of success for our partners across Georgia.</p>
+                <p className="text-slate-500 leading-relaxed font-medium">To lead Atlanta's contract labor industry through unmatched accountability. We don't just fill roles at GWCC or your warehouse—we build the infrastructure of success for our partners across Georgia.</p>
               </article>
               <article>
                 <h4 className="text-2xl font-black text-black mb-8 uppercase tracking-tighter">Zero-Waste Operations</h4>
