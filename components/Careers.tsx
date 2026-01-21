@@ -8,7 +8,7 @@ const Careers: React.FC<CareersProps> = () => {
   useEffect(() => {
     document.title = 'Join Our Crew | Careers at V&A Workforce | Atlanta Jobs';
     return () => {
-      document.title = 'V&A Workforce | Atlanta Premium Contract Labor Service Provider';
+      document.title = 'V&A Workforce | Atlanta Premium Contract Labor Service Providers';
     };
   }, []);
 

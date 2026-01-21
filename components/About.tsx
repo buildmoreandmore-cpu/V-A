@@ -9,7 +9,7 @@ const About: React.FC<AboutProps> = ({ fullPage, navigate }) => {
   return (
     <section
       className={`${fullPage ? 'pt-32 lg:pt-40 pb-16 lg:pb-32' : 'py-16 lg:py-32'} bg-white overflow-hidden`}
-      aria-label="About V&A Workforce - Atlanta Premium Contract Labor Service Provider"
+      aria-label="About V&A Workforce - Atlanta Premium Contract Labor Service Providers"
       itemScope
       itemType="https://schema.org/Organization"
     >
@@ -52,7 +52,7 @@ const About: React.FC<AboutProps> = ({ fullPage, navigate }) => {
               <span className="italic font-serif opacity-40">Precision.</span>
             </h3>
             <p className="text-slate-600 text-xl mb-12 leading-relaxed font-medium" itemProp="description">
-              <strong itemProp="legalName">Varist & Associates (V&A Workforce)</strong> is Atlanta's premium contract labor service provider. Based in <span itemProp="addressLocality">Downtown Atlanta</span> on Peachtree Street, we specialize in <strong>same-day workforce deployment</strong> for warehouses, events, construction sites, and industrial facilities across <strong>Metro Atlanta and Georgia</strong>.
+              <strong itemProp="legalName">Varist & Associates (V&A Workforce)</strong> is Atlanta's premium contract labor service providers. Based in <span itemProp="addressLocality">Downtown Atlanta</span> on Peachtree Street, we specialize in <strong>same-day workforce deployment</strong> for warehouses, events, construction sites, and industrial facilities across <strong>Metro Atlanta and Georgia</strong>.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">

@@ -11,7 +11,7 @@ const EventPage: React.FC = () => {
       document.title = `${event.title} | V&A Workforce`;
     }
     return () => {
-      document.title = 'V&A Workforce | Atlanta Premium Contract Labor Service Provider';
+      document.title = 'V&A Workforce | Atlanta Premium Contract Labor Service Providers';
     };
   }, [event]);
 

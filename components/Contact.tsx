@@ -39,7 +39,7 @@ const Contact: React.FC<ContactProps> = ({ fullPage, title, navigate }) => {
               Contact <br/> <span className="opacity-30 italic font-serif">Us.</span>
             </h1>
             <p className="text-xl text-slate-500 font-medium max-w-2xl tracking-tight leading-relaxed">
-              Partner with <strong>Atlanta's premier contract labor service provider</strong>. Same-day deployment, vetted crews, and professional accountability. Call <strong>404.861.7794</strong> for immediate staffing needs.
+              Partner with <strong>Atlanta's premier contract labor service providers</strong>. Same-day deployment, vetted crews, and professional accountability. Call <strong>404.861.7794</strong> for immediate staffing needs.
             </p>
           </header>
         )}

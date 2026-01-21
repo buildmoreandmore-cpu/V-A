@@ -43,7 +43,7 @@ const Header: React.FC<HeaderProps> = ({ isScrolled, currentView, navigate }) =>
         <button onClick={() => navigate('home')} className="flex items-center space-x-3 text-left group">
           <img
             src="https://i.ibb.co/NcVBDvH/slazzer-preview-z7e0n.png"
-            alt="V&A Workforce - Atlanta Premium Contract Labor Service Provider"
+            alt="V&A Workforce - Atlanta Premium Contract Labor Service Providers"
             className={`h-12 w-auto object-contain ${isScrolled || currentView !== 'home' || isMobileMenuOpen ? '' : 'invert'}`}
           />
           <div className={`flex flex-col transition-all duration-300 ${isMobileMenuOpen ? 'opacity-0 lg:opacity-100' : 'opacity-100'}`}>

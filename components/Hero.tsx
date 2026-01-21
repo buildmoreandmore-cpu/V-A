@@ -8,7 +8,7 @@ const Hero: React.FC<HeroProps> = ({ navigate }) => {
   return (
     <section
       className="relative min-h-screen flex items-center bg-varist-hero overflow-hidden"
-      aria-label="Atlanta Premium Contract Labor Service Provider - V&A Workforce"
+      aria-label="Atlanta Premium Contract Labor Service Providers - V&A Workforce"
       itemScope
       itemType="https://schema.org/Service"
     >
