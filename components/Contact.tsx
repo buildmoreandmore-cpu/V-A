@@ -10,6 +10,7 @@ const Contact: React.FC<ContactProps> = ({ fullPage, title, navigate }) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    phone: '',
     service: 'Workforce Deployment',
     urgency: 'Immediate / < 24 hrs',
     message: ''
@@ -20,7 +21,7 @@ const Contact: React.FC<ContactProps> = ({ fullPage, title, navigate }) => {
     e.preventDefault();
     // Send email via mailto
     const subject = `V&A Workforce Inquiry - ${formData.service}`;
-    const body = `Name/Company: ${formData.name}%0D%0AEmail: ${formData.email}%0D%0AService: ${formData.service}%0D%0AUrgency: ${formData.urgency}%0D%0A%0D%0AMessage:%0D%0A${formData.message}`;
+    const body = `Name/Company: ${formData.name}%0D%0AEmail: ${formData.email}%0D%0APhone: ${formData.phone}%0D%0AService: ${formData.service}%0D%0AUrgency: ${formData.urgency}%0D%0A%0D%0AMessage:%0D%0A${formData.message}`;
     window.location.href = `mailto:Polo@vassoc.com?subject=${encodeURIComponent(subject)}&body=${body}`;
     setSubmitted(true);
   };
@@ -108,6 +109,10 @@ const Contact: React.FC<ContactProps> = ({ fullPage, title, navigate }) => {
                     <label className="block text-[9px] font-black uppercase tracking-[0.4em] text-slate-400 mb-4">Secure Channel</label>
                     <input type="email" required className="w-full px-0 py-4 bg-transparent border-b-2 border-slate-100 focus:outline-none focus:border-black transition-all font-bold placeholder-slate-300" placeholder="Email Address" value={formData.email} onChange={(e) => setFormData({...formData, email: e.target.value})} />
                   </div>
+                </div>
+                <div>
+                  <label className="block text-[9px] font-black uppercase tracking-[0.4em] text-slate-400 mb-4">Direct Line</label>
+                  <input type="tel" required className="w-full px-0 py-4 bg-transparent border-b-2 border-slate-100 focus:outline-none focus:border-black transition-all font-bold placeholder-slate-300" placeholder="Phone Number" value={formData.phone} onChange={(e) => setFormData({...formData, phone: e.target.value})} />
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                   <div>
