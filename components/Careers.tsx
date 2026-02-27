@@ -33,7 +33,10 @@ const Careers: React.FC<CareersProps> = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    alert('Application submitted! We will contact you within 48 hours.');
+    const subject = `V&A Workforce Application - ${formData.name}`;
+    const body = `Name: ${formData.name}%0D%0APhone: ${formData.phone}%0D%0AEmail: ${formData.email}%0D%0ADriver's License: ${formData.driversLicense}%0D%0AWilling to Travel: ${formData.willingToTravel}%0D%0AAddress: ${formData.address}%0D%0A%0D%0AAbout:%0D%0A${formData.about}`;
+    window.location.href = `mailto:Feryvarist2@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+    alert('Application submitted! Your email client should open. If not, please call us at 404.861.7794.');
   };
 
   return (

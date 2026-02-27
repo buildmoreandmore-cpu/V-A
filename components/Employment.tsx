@@ -19,7 +19,10 @@ const Employment: React.FC<EmploymentProps> = ({ fullPage, navigate }) => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    alert('Application submitted! We will contact you within 48 hours.');
+    const subject = `V&A Workforce Application - ${formData.firstName} ${formData.lastName}`;
+    const body = `Name: ${formData.firstName} ${formData.lastName}%0D%0APhone: ${formData.phone}%0D%0AEmail: ${formData.email}%0D%0ADriver's License: ${formData.driversLicense}%0D%0AWilling to Travel: ${formData.willingToTravel}%0D%0AAddress: ${formData.address}%0D%0A%0D%0AAbout:%0D%0A${formData.about}`;
+    window.location.href = `mailto:Feryvarist2@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+    alert('Application submitted! Your email client should open. If not, please call us at 404.861.7794.');
   };
   return (
     <div className={`${fullPage ? 'pt-32 lg:pt-40 pb-16 lg:pb-32' : 'py-16 lg:py-32'} bg-slate-50`}>
@@ -110,7 +113,7 @@ const Employment: React.FC<EmploymentProps> = ({ fullPage, navigate }) => {
                 <h4 className="text-4xl font-black text-black mb-16 tracking-tighter text-center uppercase">V&A Intake Protocol</h4>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
                   {[
-                    { title: 'Asset Inquiry', desc: 'Submit your resume and professional summary via administrator@vandahire.com.' },
+                    { title: 'Asset Inquiry', desc: 'Submit your resume and professional summary via Feryvarist2@gmail.com.' },
                     { title: 'Strategic Review', desc: 'Our intake team performs a thorough vetting of skills, history, and reliability.' },
                     { title: 'Technical Check', desc: 'Brief safety assessment and protocol alignment for site integration.' },
                     { title: 'Deployment', desc: 'Integration into the active V&A Workforce for your first operational shift.' }
