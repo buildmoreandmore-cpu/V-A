@@ -1,4 +1,6 @@
 {
+  "buildCommand": "mkdir -p dist && cp public/maintenance.html dist/index.html",
+  "outputDirectory": "dist",
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ]
